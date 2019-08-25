@@ -1,0 +1,62 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e4e7;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.header {
+  height: 20px;
+}
+
+.logo {
+  height: 20px;
+  background-color: black;
+  float: left;
+  width: 150px;
+}
+
+.menu {
+  float: right;
+  width: 500px;
+  height: 20px;
+}
+
+.menu--item {
+  float: right;
+  height: 100%;
+  width: 100px;
+  background-color: #000;
+  margin-right: 10px;
+}
+
+.slider {
+  margin-top: 10px;
+  clear: both;
+  height: 500px;
+  background-color: #000;
+}
+
+.post {
+  width: calc(50% - 5px);
+  height: 250px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.post--one {
+  float: left;
+  margin-right: 5px;
+}
+
+.post--two {
+  float: right;
+  margin-left: 5px;
+}
