@@ -1,0 +1,27 @@
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-even {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
