@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+* {
+    /** Resetting Margin, Padding of ALL elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    /** Open Sans font for whole document. Apply which ever font you want */
+}
+
+.header {
+    background-image: url('./../img/header.jpg');
+    /** Background Image of the header section */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.main--navbar {
+    /**
+     * Try Learning FlexBox from This link if you don't understand it before
+     * https://flexboxfroggy.com/
+     */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid #c2c2c2
+}
+
+.logo {
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.menu__item {
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.menu__item a {
+    color: #ffffff;
+    text-decoration: none;
+    /** Remove the underline from all the links. Try removing the value and see the changes to better understand */
+}
+
+.menu__item a.active {
+    color: rgb(154, 205, 50);
+    /** An Active Navbar Item in the Page which represent the current loaded page on browser */
+}
+
+.dropdown {
+    position: relative;
+    /** Position in CSS. See CSS tutorials I copied in your mobile */
+}
+
+.dropdown .dropdown__icon {
+    color: #ffffff
+}
+
+.menu__dropdown {
+    list-style-type: none;
+    background-color: #fff;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    /** Position in CSS. See CSS tutorials I copied in your mobile */
+    top: calc(100% + 10px);
+    display: none;
+}
+
+.dropdown:hover .menu__dropdown {
+    display: block;
+}
+
+.dropdown__item {
+    padding: 10px 35px;
+}
+
+.dropdown__item:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown__item a {
+    color: #000000;
+}
+
+.header__content {
+    height: calc(100% - 70px);
+    /** Height of Screen - Height of Navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__heading {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 300
+}
+
+.header__text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, .7)
+}
+
+.header__btn, .feature__btn, .sec__btn {
+    border: none;
+    background-color: yellowgreen;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header__btn:hover, .feature__btn:hover, .sec__btn:hover {
+    background-color: limegreen;
+}
+
+.sec {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.sec--green {
+    background-color: rgb(154, 205, 50);
+}
+
+.sec--green .heading {
+    color: #ffffff;
+}
+
+.sec--green .text {
+    color: rgba(255, 255, 255, .7);
+}
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.text {
+    text-align: center;
+    max-width: 60%;
+    margin: 30px auto;
+    font-size: 16px;
+}
+
+.feature {
+    padding: 30px 5%;
+    margin: 30px auto 0 auto;
+    display: flex;
+}
+
+.feature--black {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.feature__img img {
+    border-radius: 50%;
+}
+
+.feature__text {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.feature__text h4 {
+    font-size: 30px
+}
+
+.feature__text p {
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.services--sec {
+    display: flex;
+}
+
+.services--sec .service--item {
+    flex: 1;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.services--sec .service--item:hover {
+    border: 10px solid rgba(255, 255, 255, .3);
+    background-size: 110%
+}
+
+/**
+ * first-of-type,nth-of-type-last-of-type are called pseudo-classes
+ * Learn more about them from this link
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+ */
+
+.services--sec .service--item:first-of-type {
+    background-image: url('./../img/writing.jpg');
+}
+
+.services--sec .service--item:nth-of-type(2) {
+    background-image: url('./../img/concert.jpg');
+}
+
+.services--sec .service--item:last-of-type {
+    background-image: url('./../img/pencil_sharpener.jpg');
+}
+
+.white--icon {
+    color: #ffffff;
+}
+
+.contactus {
+    padding: 60px 20px;
+    background-color: yellowgreen;
+    color: #fff;
+    text-align: center
+}
+
+.contactus .heading {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contactus .text {
+    font-size: 22px;
+    font-weight: 300
+}
+
+.footer {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 16px;
+}
