@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.main--navbar {
+    /**
+     * Try Learning FlexBox from This link if you don't understand it before
+     * https://flexboxfroggy.com/
+     */
+    display: flex;
+    padding: 0 5%;
+    background-color: #222222;
+    border-bottom: 1px solid #c2c2c2
+}
+
+.logo {
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__item {
+    padding: 10px 25px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item a {
+    color: rgb(157, 157, 157);
+    text-decoration: none;
+    /** Remove the underline from all the links. Try removing the value and see the changes to better understand */
+}
+
+.menu__item.active {
+    background-color: #000000;
+    color: #ffffff
+    /** An Active Navbar Item in the Page which represent the current loaded page on browser */
+}
+
+.menu__item.active a {
+    color: #ffffff
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.portfolio--sec {
+    width: 90%;
+    margin: 0 auto
+}
+
+.portfolio__heading {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c2c2c2
+}
+
+.portfolio__heading h1 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+}
+
+.portfolio__heading h1 small {
+    font-size: 24px;
+    color: #777;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.article--item {
+    width: 50%;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.article--item img {
+    width: 100%;
+}
+
+.article__heading {
+    font-size: 24px;
+    color: #23527c;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 10px auto;
+    display: block;
+}
+
+.article__text {
+    font-size: 14px;
+    color: #333
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.pagination--item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    color: #23527c;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination--item:hover {
+    background-color: #eee;
+}
+
+.pagination--item.active {
+    background-color: #23527c;
+    color: #ffffff;
+}
+
+.pagination--item:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination--item:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination--item:not(:last-of-type) {
+    border-right: none;
+}
+
+.features {
+    background-color: #87cefa;
+    padding: 50px 5%;
+    display: flex;
+}
+
+.feature--item {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.feature--item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.feature--item .feature__name {
+    color: #191970;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 10px auto;
+}
+
+.feature--item .feature__text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.42857143;
+    margin-bottom: 10px;
+}
+
+.feature--item .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #337ab7;
+    border: 1px solid transparent;
+    color: #ffffff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+.footer {
+    padding: 50px 0;
+    text-align: center;
+}
